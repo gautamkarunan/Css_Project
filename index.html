@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p
+        {
+            margin:5px;
+
+
+        }
+        body,h1
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        .header
+        {
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            
+        }
+        .color ul
+        {
+            list-style: none;
+            
+            margin: 0px;
+            padding: 0px;
+            background-color: blue;
+            
+        }
+        
+        .color li
+        {
+            float: left;
+            
+            
+            
+        }
+        .color li a
+        {
+            position:relative;
+            left: 350px;
+            display: inline-block;
+            color:white;
+            text-decoration: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            margin: 18px 20px;
+
+
+
+        }
+        .color li a:hover
+        {
+            box-shadow:0px 1px 1px white;
+            border-radius: 5px;
+        }
+        
+        .color
+        {
+            background-color: blue;
+            width: 100%;
+            height: 60px;
+        }
+        .image
+        {
+            background-image: url(images/banner8.jpg);
+            width: 100%;
+            height:600px;
+            background-position: center;
+            background-size: cover;
+        }
+        .leftimage
+        {
+            color: white;
+            width: 50%;
+            float: left;
+            text-align: left;
+            padding: 200px 50px;
+            font-size: 17px;
+            transition:transform .2s;
+            transform: scale(1.05); 
+
+            
+        }
+        .leftimage h1
+        {
+            font-size: 60px;
+            
+        }
+        .leftimage input
+        {
+            width: 130px;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 7px;
+            border: 0px;
+            color: white;
+            background-color: red;
+        }
+        .rightimage
+        {
+    
+            float: left;
+            width: 42%;
+        }
+        .rightimage img
+        {
+            padding: 150px 0px;
+            width: 530px;
+        }
+        .body1
+        {
+            width: 40%;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+            float: left;
+            margin: 40px 20px;
+
+        }
+        .body1 img{
+            width: 450px;
+            border-radius: 10px;
+        }
+        
+        .body2
+        {
+            width: 56%;
+            float: left;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+            
+            
+        }
+        .body2 ul
+        {
+            
+             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            
+            margin: 40px 0px;
+           list-style:none ;
+           
+        }
+        .body2 li
+        {
+            float: left;
+        }
+        .body2 li a
+        {
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-align: center;
+            color: black;
+            font-weight: 630;
+            font-size: 20px;
+            
+            
+            
+        }   
+        .body2 li a:hover
+        {
+            background-color:papayawhip;
+            border-radius: 10px;
+            
+            border: black ;
+        }
+        
+        
+        .card
+        {
+            float: left;
+            position: relative;
+            top: 30px;
+            text-align: center;
+            background-color:rgba(0, 0, 0, 0.05);
+            font-size: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+            border-radius: 10px;
+            padding-bottom: 8px
+        }
+        .card2
+        {
+            float: left;
+            top: 30px;
+            position: relative;
+            left: 10px;
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            background-color:rgba(0, 0, 0, 0.05);
+            font-size: 20px;
+            border-radius: 10px;
+            padding-bottom: 8px
+
+        }
+        .card3 
+        {
+            float: left;
+            position: relative;
+            left: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            top: 30px;
+            text-align: center;
+            background-color:rgba(0, 0, 0, 0.05);
+            font-size: 20px;
+            border-radius: 10px;
+            padding-bottom: 8px            
+        }
+        .card input
+        {
+            width: 100px;
+            background-color: rgba(0, 0, 0, 0.05);
+            height: 35px;
+            border-radius:5px;
+            font-size: 15px;
+            border: 0px;
+            
+        }
+
+        .card2 input
+        {
+            width: 100px;
+            background-color: rgba(0, 0, 0, 0.05);
+            height: 35px;
+            border-radius:5px;
+            font-size: 15px;
+            border: 0px;
+            
+        }
+
+        .card3 input
+        {
+            width: 100px;
+            font-size: 15px;
+            background-color: rgba(0, 0, 0, 0.05);
+            height: 35px;
+            border-radius:5px;
+            border: 0px;
+            
+        }
+
+        .card:hover
+        {
+            background-color:rgba(0, 0, 0, 0.1);
+        }            
+        .card2:hover
+        {
+            background-color:rgba(0, 0, 0, 0.1);
+        }            
+        .card3:hover
+        {
+            background-color:rgba(0, 0, 0, 0.1);
+        }            
+        
+        
+        .card input:hover
+        {
+            background-color:darkslateblue;
+            color: white;
+        }
+        .card2 input:hover
+        {
+            background-color:darkslateblue;
+            color: white;
+        }
+        .card3 input:hover
+        {
+            background-color:darkslateblue;
+            color: white;
+        }
+        .pic
+        {
+        background-image: url("images/bgs1.jpg");
+        background-size: cover;
+        width:75%;
+        position: relative;
+        top: 530px;
+        height:500px;
+        }
+        .pic .p10
+        {
+            text-align: center;
+            position: relative;
+            left:-50px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            top: -350px;
+            letter-spacing: 2px;
+            font-size: 20px;
+        }
+        .pic .p20
+        {
+            position: relative;
+            left: 30px;
+            font-size: 30px;
+            top: -350px;
+            font-weight: bold;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            color: red;
+            
+        }
+        .pic .p30
+        {
+            font-size: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            top: -300px;
+            left: 90px;
+            color: red;
+            font-weight: 700;
+            position: relative;
+        }
+
+        .pic2
+        {
+            background-image: url("images/bgs2.jpg");
+            width: 37%;
+            background-size: cover;
+            overflow: hidden;
+            left: 250px;
+            position:relative;
+             float:left;    
+            height:500px;
+            top:30px;
+        }
+        .pic2 p
+        {
+            background-color: black;
+            color:white;
+            margin: 240px 180px;
+            display: block;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            border: 2px solid white;
+            padding-top: 10px;
+            border-radius: 10px;
+            width: 30%;
+            font-weight: 700;
+            height: 40px;
+            text-align: center;
+            
+        }
+        .sp
+        {
+            position: relative;
+            width: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+            margin: 550px 0px;
+            text-align: center;
+            padding: 20px 0px; 
+            height: 100px;
+        }
+        .photo1
+        {
+            background-image: url("images/bgs3.jpg");
+            width: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: -600px 40px;
+            height: 250px;
+            float: left;
+            transition:transform .2s;
+            position: relative;
+            border-radius: 10px;
+            
+            
+
+        }
+        .photo2
+        {
+            background-image: url("images/bgs4.jpg");
+            background-size: cover;
+            width: 43%;
+            position: relative;
+            height: 600px;
+            background-repeat: no-repeat;
+            float: left;
+            left: 0px;
+            margin: -600px 700px;
+            border-radius:10px;
+
+        }
+        .photo3
+        {
+           background-image: url("images/bgs5.jpg");
+           background-repeat: no-repeat;
+           background-size: cover;
+           position: relative;
+           width: 50%;
+           transition:transform .2s;
+           float: left;
+           height: 250px;
+           margin: -250px 40px;
+           border-radius: 10px ;
+
+        }
+        .top
+        {
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            padding: 20px 0px;
+
+        }
+        .item
+        {
+            margin: 0px 12px;
+            padding: 0px 10px;
+            line-height: 35px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            
+            
+        }
+        .item p
+        {
+            color: red;
+            letter-spacing: 0px;
+            font-size: 25px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            
+            font-weight: 600;
+        }
+        .item1
+        {
+            float: left;
+            position: relative;
+            top: 30px;
+            
+            padding: 0px 5px;
+            background-size: cover;
+
+            text-align: center;
+           
+            font-size: 20px;
+            border-radius: 10px;
+            padding-bottom: 8px     
+        }
+        .item2
+        {
+            float: left;
+            position: relative;
+            top: 30px;
+            left: 5px;
+            text-align: center;
+            
+            font-size: 20px;
+            border-radius: 10px;
+            padding-bottom: 8px     
+        }
+        .item3
+        {
+            float: left;
+            position: relative;
+            top: 30px;
+            left: 15px;
+            text-align: center;
+            
+            font-size: 20px;
+            border-radius: 10px;
+            padding-bottom: 8px     
+        }
+        .item4
+        {
+            float: left;
+            position: relative;
+            top: 30px;
+            left: 25px;
+
+            text-align: center;
+            
+            font-size: 20px;
+            border-radius: 10px;
+            padding-bottom: 8px     
+        }
+        .item5
+        {
+            float: left;
+            position: relative;
+            top: 45px;
+            text-align: center;
+            
+            font-size: 20px;    
+            
+            border-radius: 10px;
+            padding-bottom: 8px     
+        }
+        .item6
+        {
+            float: left;
+            position: relative;
+            top: 45px;
+            left: 7px;
+            
+            padding: 0px 5px;
+            text-align: center;
+            
+            font-size: 20px;
+            border-radius: 10px;
+            padding-bottom: 8px     
+        }
+        .item7
+        {
+            float: left;
+            position: relative;
+            top: 45px;
+            text-align: center;
+            
+            font-size: 20px;
+            left: 14px;
+            border-radius: 10px;
+            padding-bottom: 8px     
+        }
+        .item8
+        {
+            float: left;
+            position: relative;
+            top: 45px;
+            left: 28px;
+            text-align: center;
+           
+            font-size: 20px;
+            border-radius: 10px;
+            padding-bottom: 8px     
+        }
+        .item img:hover
+        {
+            background-color:rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        
+    
+        .item1 input
+        {
+            width: 100px;
+            background-color: rgba(0, 0, 0, 0.05);
+            height: 35px;
+            border-radius:5px;
+            border: 0px;
+            font-size: 15px;
+            border: 1px solid black;
+            
+        }
+        .item2 input
+        {
+            width: 100px;
+            background-color: rgba(0, 0, 0, 0.05);
+            height: 35px;
+            border-radius:5px;
+            border: 0px;
+            font-size: 15px;
+            border: 1px solid black;
+            
+        }        
+        .item3 input
+        {
+            width: 100px;
+            background-color: rgba(0, 0, 0, 0.05);
+            height: 35px;
+            border-radius:5px;
+            border: 0px;
+            font-size: 15px;
+            border: 1px solid black;
+            
+        }        
+        .item4 input
+        {
+            width: 100px;
+            background-color: rgba(0, 0, 0, 0.05);
+            height: 35px;
+            border-radius:5px;
+            border: 0px;
+            font-size: 15px;
+            border: 1px solid black;
+        }        
+        .item5 input
+        {
+            width: 100px;
+            background-color: rgba(0, 0, 0, 0.05);
+            height: 35px;
+            border-radius:5px;
+            border: 0px;
+            font-size: 15px;
+            border: 1px solid black;
+            
+        }        
+        .item6 input
+        {
+            width: 100px;
+            background-color: rgba(0, 0, 0, 0.05);
+            height: 35px;
+            border-radius:5px;
+            border: 0px;
+            font-size: 15px;
+            border: 1px solid black;
+        }        
+        .item7 input
+        {
+            width: 100px;
+            background-color: rgba(0, 0, 0, 0.05);
+            height: 35px;
+            border-radius:5px;
+            border: 0px;
+            font-size: 15px;
+            border: 1px solid black;
+        }        
+        .item8 input
+        {
+            width: 100px;
+            background-color: rgba(0, 0, 0, 0.05);
+            height: 35px;
+            border-radius:5px;
+            border: 0px;
+            font-size: 15px;
+            border: 1px solid black;
+            
+        }
+        .item img
+        {
+            background-color:rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+        } 
+           
+
+        
+        .item input[type=button]:hover
+        {
+            background-color:darkslateblue;
+            color: cornsilk;
+        } 
+        .topb
+        {
+             
+            position: relative;
+            top: 100px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            text-decoration;
+            text-align: center;
+        }
+        .brand
+    {
+        position: relative;
+        top: 150px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        
+        letter-spacing: 140px;
+        width: 100%;
+        float: left;
+        
+
+    }
+    .news
+    {
+        position: relative;
+        top: 300px;
+        background-color:darkblue;
+         width: 100%;
+         height: 200px;
+    }
+    .news1
+    {
+        
+        color: white;
+       float: left;
+       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            
+       padding: 0px 40px;
+       line-height: 50px;
+       
+        
+
+    }
+    .news2
+    {
+        float: left;
+        position: relative;
+        left: 350px;
+
+    }
+    .news2 input[type=email]
+    {
+        padding: 15px 100px;
+        border-radius: 20px;
+        border: 0px;
+        font-size: 18px;
+        text-align: left ;
+    }
+    .foot
+        {
+            position: relative;
+            top: 350px;
+            column-count: 4;
+            margin: 0px 30px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            
+
+
+        }
+
+    .foot h1
+    {
+        font-weight: 400;
+        text-decoration: underline darkslateblue 2px;
+        padding-bottom: 20px;
+
+
+    }
+    .footer
+    {
+        text-align: center;
+    }
+    .photo1 p
+    {
+        position: relative;
+        left: 480px;
+        text-align: center;
+        width: 15%;
+        padding:0px 0px;
+        height: 30%;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        background-color: darkblue;
+        font-size: 20px;
+        border-radius: 120px 120px;
+    }
+    .photo1 h1
+    {
+        color: white;
+        padding: 0px 50px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }
+    .photo3 h1
+    {
+        margin: 70px 50px;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }  
+    .photo2 p
+    {
+        text-align: right;
+        position: relative;
+        top: 100px;
+        margin: 20px 80px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        color: white;
+        font-size: 30px;
+    }
+    .photo2 .p1
+    {
+        color: red;
+        font-weight:700;
+    }
+    .photo1:hover
+    {
+        transform: scale(1.05); 
+        
+    }
+    .photo3:hover
+    {
+        transform: scale(1.05); 
+        
+    }
+
+
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Grocery Mart</h1>
+        ONLINE GROCERY MART
+    </div>
+    <div class="color">  
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">PRODUCTS</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">PAGES</a></li>
+        <li><a href="#">CONTACT US</a></li>
+    </ul>
+    </div>
+    
+    <div class="image">
+        <div class="leftimage">
+            START YOUR DAILY ONLINE SHOPPING
+            <H1>Stay home & we will<br> deliver your daily need's</H1>
+           <input type="submit" value="Shop now"> 
+        </div>
+
+        <div class="rightimage">
+       <img src="images/banner-img.png"> 
+        </div>
+     </div>   
+        <div class="body">
+        
+            <div class="body1">
+                <img src="images/image1.jpg">            
+    
+            </div>
+             <div class="body2">
+                <ul>
+                    <li><a href="#">VEGETABLES</a></li>
+                    <li><a href="#">MEALS & SEA FOOD</a></li>
+                    <li><a href="#">BAKERY</a></li>
+                    <li><a href="#">BEVERAGES</a></li>
+                </ul>
+                <div class="card">
+                    <img src="images/a1.png">
+                    <p>Ladies finger 500g</p>
+                    <p >$350 </p>
+                    <input type="submit" value="Add to Cart">
+                </div>
+                 <div class="card2">
+                    <img src="images/a2.png">
+                    <p>Bringal Long 500g</p>
+                    <p >$302 </p>
+                    <input type="submit" value="Add to Cart">
+                </div>
+                <div class="card3">
+                    <img src="images/a3.png">
+                    <p>Palak 250g</p>
+                    <p >$245 </p>
+                    <input type="submit" value="Add to Cart">
+                </div>
+          
+            </div>
+            <div class="pic">
+
+                <p class="p10">Free Delivery</p>
+                <p class="p20">20% Cashback</p>
+                <p class="p30">SHOP NOW &#8594;</p>
+            </div>
+            <div class="pic2">
+                
+                    <P>ORGANIC FOODS</P>
+                
+                
+            </div> 
+                        
+            <div class="sp">
+                 <h1>Special Deals</P>          
+            </div>
+
+            <div class="photo">
+                <div class="photo1">
+                   <p>30% <br>off/-</p>
+                   <h1>WE OFFER<BR>BEST PRODUCTS</h1>
+
+                </div>
+                <div class="photo2">
+                    <p style="font-weight: 700;">BIG DEALS</p>
+                    <P class="p1">SAVE UP</P>
+                    <P>TO</P>
+                    <P class="p1">30%</P>
+                  
+
+                </div>
+                <div class="photo3">
+                    <h1>BEST STORE <BR><span>FOR GROCERIES</h1>
+                </div>
+
+            </div>
+
+            <div class="top">
+                <h1>Top Products</h1>
+            </div>
+        <div class="item">     
+                <div class="item1">
+                    <img src="images/e1.png">
+                    <p>Pista</p>
+                    $500<br>
+                    <input type="button" value="Add to cart">
+
+                </div>
+                <div class="item2">
+                    <img src="images/e2.png">
+                    <p>Cashews</p>
+                    $370<br>
+                    <input type="button" value="Add to cart">
+
+                </div>
+                <div class="item3">
+                    <img src="images/e3.png">
+                    <p>Walnuts</p>
+                    $100<br>
+                    <input type="button" value="Add to cart">
+
+                </div>
+                <div class="item4">
+                    <img src="images/e4.png">
+                    <p>Himalayan Walnuts</p>
+                    $250<br>
+                    <input type="button" value="Add to cart">
+
+                </div>
+                <div class="item5">
+                    <img src="images/f4.png">
+                    <p>Arhar Dal</p>
+                    $30<br>
+                    <input type="button" value="Add to cart">
+
+                </div>
+
+                <div class="item6">
+                    <img src="images/f3.png">
+                    <p>Tata Sampann</p>
+                    $170<br>    
+                    <input type="button" value="Add to cart">
+
+                </div>
+                <div class="item7">
+                    <img src="images/f2.png">
+                    <p>Lays's Onion Chips</p>
+                    $10<br>
+                    <input type="button" value="Add to cart">
+
+                </div>
+
+                <div class="item8">
+                    <img src="images/f1.png">
+                    <p>Diary Milk</p>
+                    $200
+                    <br>
+                    <input type="button" value="Add to cart">
+
+                </div>
+            </div>
+            </div>        
+       <div class="topb">
+           <h1>Top Brands</h1>
+       </div>
+       <div class="brand">
+        <img src="images/tb1.png">
+         <img src="images/tb2.png">
+         <img src="images/tb3.png">
+         <img src="images/tb4.png">
+                 
+      </div>
+
+<div class="news">
+    <div class="news1">
+   <h1>Newsletter</h1>
+   Excepteur sint occaecat cupidatat non proident, sunt.
+   </div>
+   <div class="news2">
+       <form>
+           <input type="email" placeholder="Email">    
+       </form>
+   </div> 
+</div>
+<div class="foot">
+    <h1>CONTACT</h1>
+   <p>London,235 Terry</p>
+   <p>info@example.com</p>
+   <p>7845124578</p>
+   <h1>INFORMATION</h1>
+   <ul> 
+       <li>About Us</li>
+       <li>Contact Us</li>
+       <li>Sortcodes</li>
+       <li>FAQ's</li>
+       <li>Special Products</li>            
+   </ul>
+   <h1>CATEGORY</h1>
+   <p></p>
+   <ul> 
+       <li>Fruits & Vegetables</li>
+       <li>Meats & Seafood</li>
+       <li>Bakery & Pastry</li>
+       <li>Beverages</li>
+       <li>Breakfast & Dairy</li>            
+   </ul>
+   <h1>PROFILE</h1>
+   <ul>
+       <li>Home</li>
+       <li>Today's Special</li>
+   </ul>
+
+</div>
+<div class="footer11">
+    <p>&copy; 2021 Grocery Mart. All rights reserved.Designed by W3 layouts
+        </p>
+</div>
+
+
+
+     
+</body>
+</html>
